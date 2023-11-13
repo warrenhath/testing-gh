@@ -1,9 +1,9 @@
 import fcopy as fc
 
-test1 = fc.fcopy("input1.txt")
+test1 = fc.fcopy("input1.txt", "input_copy.txt")
 
 with open("input1.txt", "rt") as file:
-    with open(test1, "rt") as filecopy:
+    with open("input_copy.txt", "rt") as filecopy:
         l = file.readlines()
         lcopy = filecopy.readlines()
         for line in range(len(l)):
