@@ -12,4 +12,5 @@ def main():
         if len(sys.argv) == 1 or len(sys.argv) == 2:
             print("Usage: fcopy.py <src> <dest>")
 
-main()
+if __name__ == "__main__":
+    main()  
